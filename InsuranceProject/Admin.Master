@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="InsuranceProject.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the sidebar and web form */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: darkslateblue;
+            padding-top: 20px;
+        }
+
+        .sidebar .profile-picture {
+            background-color:aliceblue;
+            width: 100px; /* Adjust the size of your profile picture */
+            height: 100px; /* Ensure it's a square */
+            border-radius: 100%; /* Make it round */
+            display: block;
+            margin: 0 auto;
+            overflow: hidden; /* Hide overflow outside the circle */
+        }
+
+        .sidebar a {
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+   
+    </style>
+
+</head>
+<body>
+        <div class="sidebar">
+   <div class="profile-picture">
+        <img src="your-profile-picture.jpg" alt="Profile Picture">
+    </div>
+     <h7 style="margin-left:88px">Admin</h7>
+    <a href="#">Dashboard</a>
+    <a href="#">Customer</a>
+    <a href="#">Category</a>
+    <a href="#">Policy</a>
+    <a href="#">Question</a>
+</div>
+    <form id="form2" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
